@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-color: rgb(136, 207, 213);
+                color: rgb(20, 27, 19);
+            }
+
+            .f1 {
+                padding: 10px;
+            }
+
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #0b0505;
+                text-align: left;
+                padding: 8px;
+            }
+        </style>
+        <script src="developer.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1>
+                <b>Developer</b>
+            </h1>
+            <hr>
+            <h2></h2>
+            <table>
+                <tr>
+                    <TH>SI.NO</TH>
+                    <th>Id</th>
+                    <th>Task</th>
+                    <th>start/end</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <div class="f1">
+                            <label></label>
+                            <div id="pid">P001</div>
+                        </div>
+                    </td>
+                    <td>
+                        <label></label>
+                        <div id="pname">Test project 1</div>
+                    </td>
+                    <td>
+                        <select id="statuschange">
+                            <option id="none" value="None">Select</option>
+                            <option id="start" value="Project is in progress">Start</option>
+                            <option id="hold" value="Project is on hold">Hold</option>
+                            <option id="end" value="Project is completed">Completed</option>
+                        </select>
+                    </td>
+                    <td>
+                        <span id="status">None</span>
+                    </td>
+                </tr>
+            </table>
+            <br>
+        </center>
+    </body>
+</html>

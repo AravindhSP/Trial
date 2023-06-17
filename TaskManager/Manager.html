@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(161, 225, 228);
+            color: rgb(6, 5, 5);
+        }
+        .tasks{
+            text-align: left;
+        }
+        #mactions{
+            display: none;}
+    </style>
+    <script type="text/javascript" src="manager.js"></script>
+</head>
+<body>
+    <center>
+    <h1><b>Manager</b></h1>
+    <hr>
+    <br>
+    <div class="f1">
+       <label>Task Name</label>
+       <input type="text" id="pname" value="Test task" name="name" placeholder="--name--">
+    </div>
+    <br>
+    <div>
+        <input id="abtn" value="Create task" type="button" name="Submit">
+    </div>
+        <br>
+        <span id="plist"></span>
+
+        <div id="mactions">
+            Assigned to:&nbsp;<select id="assign">
+                <option id="dev1" value="Developer 1">Developer 1</option>
+                <option id="dev2" value="Developer 2">Developer 2</option>
+                <option id="dev3" value="Developer 3">Developer 3</option>
+            </select><br><br>
+            Review tasks:&nbsp;<select id="review">
+                <option id="rev1" value="Task reviewed">Reviewed</option>
+                <option id="rev2" value="Task not reviewed">Yet to review</option>
+            </select><br><br>
+            Change status to:&nbsp;<select id="status">
+                <option id="statusc" value="Completed">Completed</option>
+                <option id="statusnc" value="Not completed">Not completed</option>
+            </select><br><br>
+            <input onClick="finish();" id="finish" type="button" value="Finish">
+        </div>
+    </center>
+
+</body>
+</html>
